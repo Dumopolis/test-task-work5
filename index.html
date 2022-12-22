@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Верстка макета страницы используя boostrap" />
+    <title>Тестовое для Work5</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="body d-flex flex-lg-row flex-column bg-light w-100">
+
+        <nav class="col-xxl-2 col-lg-3 bg-white navbar-expand-lg ">
+
+            <header class="d-flex align-items-center">
+                <a class="navbar-brand " href="#">
+                    <svg version="1.1" class="logo m-3" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 194 75"
+                        style="enable-background:new 0 0 194 75;" xml:space="preserve">
+                        <style type="text/css">
+                            .st0 {
+                                fill: #FF0066;
+                            }
+
+                            .st1 {
+                                fill: #6666CC;
+                            }
+
+                            .st2 {
+                                fill: #FFCC00;
+                            }
+
+                            .st3 {
+                                fill: #33CC00;
+                            }
+
+                            .st4 {
+                                fill: #00CCCC;
+                            }
+                        </style>
+                        <path class="st0" d="M170.7,62.2L155.9,45l12.2-14.2c0.9-1.1,0.4-2.5-0.8-2.8h-11.6c-0.8,0.2-1.3,0.6-1.7,1l-11.2,13V1.9
+                   c0-0.9-0.8-1.8-1.8-1.8h-10.3c-0.9,0-1.8,0.8-1.8,1.8v61.4c0,0.9,0.8,1.8,1.8,1.8H141c0.9,0,1.8-0.8,1.8-1.8V48.1l12.6,16.1
+                   c0.3,0.4,1,0.7,1.4,0.7h12.5C170.9,65,171.7,63.4,170.7,62.2z" />
+                        <path class="st1"
+                            d="M79.8,7c16,0,29.2,13.5,29.2,29.4c0,16.2-13.2,29.6-29.2,29.6S50.6,52.5,50.6,36.4C50.6,20.5,63.8,7,79.8,7z
+                    M79.8,47.9c6.2,0,11.1-5.2,11.1-11.5c0-6.2-4.9-11.2-11.1-11.2s-11.1,5.1-11.1,11.2C68.7,42.7,73.7,47.9,79.8,47.9z" />
+                        <g>
+                            <path class="st2"
+                                d="M0.6,28.5c-0.5-1.3,0.4-2.4,1.8-2.4h9.3c0.6,0,1.6,0.5,1.8,1.2l5.1,13.4h0.1l9.3-14.7c0.2-0.3,0.7-0.8,1.6-0.8
+                       h1c0.7,0,1.3,0.4,1.5,0.8l9.4,14.7h0.1l5-13.4c0.4-0.9,0.9-1.2,2-1.2h9.1c1.4,0,2.2,1.2,1.8,2.4l-13,36.4c-0.2,0.7-1.1,1.2-1.8,1.2
+                       h-0.4c-0.5,0-1.4-0.4-1.6-0.8L29.8,45.8h-0.1L17.3,65.3c-0.3,0.4-1.1,0.8-1.6,0.8h-0.5c-0.6,0-1.6-0.5-1.7-1.2L0.6,28.5z" />
+                        </g>
+                        <g>
+                            <path class="st3" d="M102.1,28.5c0-1.3,1.1-2.3,2.3-2.3h5.7c1.3,0,1.8,0.7,2.2,1.5l2.2,5.4c2.4-3.5,7-8,13.3-8
+                       c6.7,0,11.5,2.4,9.8,5.2l-6,9.8c-0.5,0.9-1.3,1.6-2.7,1.1c-0.6-0.2-1.8-0.6-2.9-0.6c-3.7,0-7,2.8-7,7v25.2c0,1.5-0.7,2.3-2.7,2.3
+                       h-11.9c-1.2,0-2.3-1.1-2.3-2.3V28.5z" />
+                        </g>
+                        <g>
+                            <path class="st4"
+                                d="M172.4,27l3-2.9c0.3-0.3,0.8-0.4,1.1-0.1c0,0,3.3,2.3,5.6,2.3c2.5,0,4.5-1.9,4.5-4.5c0-2.5-1.8-4.9-4.8-4.9
+                       h-7.2c-0.9,0-1.5-0.9-1.5-1.6V1c0-0.5,0.4-0.9,0.9-0.9H189c0.5,0,0.9,0.4,0.9,0.9v4c0,0.5-0.4,0.9-0.9,0.9H179v5.1h3.7
+                       c6.5,0,10.7,4.6,10.7,10.7c0,5.9-5,10.8-11.6,10.8c-4.9,0-8.1-2.5-9.3-3.9C171.9,27.9,171.8,27.6,172.4,27z" />
+                        </g>
+                    </svg> </a>
+                <button class="navbar-toggler h-100 me-3" type="button" data-toggle="collapse" href="#collapseExample"
+                    role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <div class="burger-icon">
+                        <span></span>
+                    </div>
+                </button>
+            </header>
+            <div class="collapse navbar-collapse" id="collapseExample">
+                <ul class="navbar-nav  gap-lg-2 justify-content-between flex-column ">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">
+                            <svg width="24px" height="24px" class="icon me-2 ms-3" viewBox="0 0 24 24" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <title>Iconly/Light/Home</title>
+                                <g id="Iconly/Light/Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <g id="Home" transform="translate(2.500000, 2.000000)" stroke="#000000"
+                                        stroke-width="1.5">
+                                        <path
+                                            d="M6.65721519,18.7714023 L6.65721519,15.70467 C6.65719744,14.9246392 7.29311743,14.2908272 8.08101266,14.2855921 L10.9670886,14.2855921 C11.7587434,14.2855921 12.4005063,14.9209349 12.4005063,15.70467 L12.4005063,15.70467 L12.4005063,18.7809263 C12.4003226,19.4432001 12.9342557,19.984478 13.603038,20 L15.5270886,20 C17.4451246,20 19,18.4606794 19,16.5618312 L19,16.5618312 L19,7.8378351 C18.9897577,7.09082692 18.6354747,6.38934919 18.0379747,5.93303245 L11.4577215,0.685301154 C10.3049347,-0.228433718 8.66620456,-0.228433718 7.51341772,0.685301154 L0.962025316,5.94255646 C0.362258604,6.39702249 0.00738668938,7.09966612 0,7.84735911 L0,16.5618312 C0,18.4606794 1.55487539,20 3.47291139,20 L5.39696203,20 C6.08235439,20 6.63797468,19.4499381 6.63797468,18.7714023 L6.63797468,18.7714023">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <svg class="icon me-2 ms-3" width="24px" height="24px" viewBox="0 0 24 24" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <title>Iconly/Light/Bag 2</title>
+                                <g id="Iconly/Light/Bag-2" stroke="none" stroke-width="1" fill="none"
+                                    fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                    <g id="Bag-2" transform="translate(3.000000, 2.500000)" stroke="#000000"
+                                        stroke-width="1.5">
+                                        <path
+                                            d="M12.7729,6.80503597 L12.7729,3.77303597 C12.7729,1.68903597 11.0839,-1.42108547e-14 9.0009,-1.42108547e-14 C6.9169,-0.00896402892 5.2199,1.67203597 5.2109,3.75603597 L5.2109,3.77303597 L5.2109,6.80503597"
+                                            id="Stroke-1"></path>
+                                        <path
+                                            d="M13.7422153,18.500336 L4.2577847,18.500336 C1.90569395,18.500336 0,16.595336 0,14.245336 L0,8.72933597 C0,6.37933597 1.90569395,4.47433597 4.2577847,4.47433597 L13.7422153,4.47433597 C16.094306,4.47433597 18,6.37933597 18,8.72933597 L18,14.245336 C18,16.595336 16.094306,18.500336 13.7422153,18.500336 Z"
+                                            id="Stroke-3"></path>
+                                    </g>
+                                </g>
+                            </svg>Мои магазины</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <svg width="24px" height="24px" class="icon me-2 ms-3" viewBox="0 0 24 24" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <title>Iconly/Light/Volume Down</title>
+                                <g id="Iconly/Light/Volume-Down" stroke="none" stroke-width="1" fill="none"
+                                    fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                    <g id="Volume-Down" transform="translate(4.000000, 5.000000)" stroke="#000000"
+                                        stroke-width="1.5">
+                                        <path
+                                            d="M0.00185460474,7.00013683 C-0.00093541396,8.22978846 -0.0558057818,9.90699383 0.704939318,10.5339278 C1.41453408,11.1187074 1.91394742,10.968028 3.20944611,11.0630996 C4.5058748,11.159068 7.24195314,14.9700015 9.35120728,13.7645662 C10.4393146,12.9089224 10.5202251,11.1151198 10.5202251,7.00013683 C10.5202251,2.88515382 10.4393146,1.09135128 9.35120728,0.235707477 C7.24195314,-0.970624727 4.5058748,2.84120566 3.20944611,2.93717409 C1.91394742,3.03224563 1.41453408,2.88156621 0.704939318,3.46634584 C-0.0558057818,4.09327982 -0.00093541396,5.77048519 0.00185460474,7.00013683 Z"
+                                            id="Stroke-1"></path>
+                                        <path
+                                            d="M14.5812833,3.31441037 C15.8925921,5.60509621 15.8925921,8.40253126 14.5812833,10.6860419"
+                                            id="Stroke-5"></path>
+                                    </g>
+                                </g>
+                            </svg>Промоматериалы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <svg width="24px" height="24px" class="icon me-2 ms-3" viewBox="0 0 24 24" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <title>Iconly/Light/Graph</title>
+                                <g id="Iconly/Light/Graph" stroke="none" stroke-width="1" fill="none"
+                                    fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                    <g id="Graph" transform="translate(2.300000, 2.100000)" stroke="#000000"
+                                        stroke-width="1.5">
+                                        <path
+                                            d="M14.9778947,11.789176 C15.6526316,11.789176 16.2189474,12.3460181 16.1157895,13.0123339 C15.5105263,16.9323339 12.1547368,19.8428602 8.10736842,19.8428602 C3.62947368,19.8428602 -3.55271368e-15,16.2133865 -3.55271368e-15,11.7365444 C-3.55271368e-15,8.04812338 2.80210526,4.6123339 5.95684211,3.8354918 C6.63473684,3.66812338 7.32947368,4.14496548 7.32947368,4.84286022 C7.32947368,9.57128127 7.48842105,10.7944392 8.38631579,11.4597023 C9.28421053,12.1249655 10.34,11.789176 14.9778947,11.789176 Z"
+                                            id="Stroke-1"></path>
+                                        <path
+                                            d="M19.3925267,7.85159824 C19.4462109,4.8137035 15.714632,-0.0831386003 11.1672636,0.00107192599 C10.8135794,0.00738771546 10.5304215,0.302124558 10.514632,0.654756137 C10.3998952,3.15265087 10.554632,6.38949298 10.6409478,7.8568614 C10.6672636,8.3137035 11.0262109,8.67265087 11.4820004,8.69896666 C12.9904215,8.78528245 16.3451583,8.90317719 18.8072636,8.53054561 C19.1420004,8.48001929 19.3872636,8.18949298 19.3925267,7.85159824 Z"
+                                            id="Stroke-3"></path>
+                                    </g>
+                                </g>
+                            </svg>Статитсика</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+
+                            <svg width="24px" height="24px" class="icon me-2 ms-3" viewBox="0 0 24 24" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <title>Iconly/Light/Buy</title>
+                                <g id="Iconly/Light/Buy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <g id="Buy" transform="translate(2.000000, 2.500000)" stroke="#000000"
+                                        stroke-width="1.5">
+                                        <path
+                                            d="M0.7501,0.7499 L2.8301,1.1099 L3.7931,12.5829 C3.8701,13.5199 4.6531,14.2389 5.5931,14.2359094 L16.5021,14.2359094 C17.3991,14.2379 18.1601,13.5779 18.2871,12.6899 L19.2361,6.1319 C19.3421,5.3989 18.8331,4.7189 18.1011,4.6129 C18.0371,4.6039 3.1641,4.5989 3.1641,4.5989"
+                                            id="Stroke-1"></path>
+                                        <line x1="12.1251" y1="8.2948" x2="14.8981" y2="8.2948" id="Stroke-3"></line>
+                                        <path
+                                            d="M5.1544,17.7025 C5.4554,17.7025 5.6984,17.9465 5.6984,18.2465 C5.6984,18.5475 5.4554,18.7915 5.1544,18.7915 C4.8534,18.7915 4.6104,18.5475 4.6104,18.2465 C4.6104,17.9465 4.8534,17.7025 5.1544,17.7025 Z"
+                                            id="Stroke-5" fill="#000000"></path>
+                                        <path
+                                            d="M16.4347,17.7025 C16.7357,17.7025 16.9797,17.9465 16.9797,18.2465 C16.9797,18.5475 16.7357,18.7915 16.4347,18.7915 C16.1337,18.7915 15.8907,18.5475 15.8907,18.2465 C15.8907,17.9465 16.1337,17.7025 16.4347,17.7025 Z"
+                                            id="Stroke-7" fill="#000000"></path>
+                                    </g>
+                                </g>
+                            </svg>Баланс</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <svg width="24px" height="24px" class="icon me-2 ms-3" viewBox="0 0 24 24" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                                <g id="Iconly/Light/2-User" stroke="none" stroke-width="1" fill="none"
+                                    fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                    <g id="2-User" transform="translate(2.000000, 2.500000)" stroke="#000000"
+                                        stroke-width="1.5">
+                                        <path
+                                            d="M7.5915,12.7068 C11.2805,12.7068 14.4335,13.2658 14.4335,15.4988 C14.4335,17.7318 11.3015,18.3068 7.5915,18.3068 C3.9015,18.3068 0.7495,17.7528 0.7495,15.5188 C0.7495,13.2848 3.8805,12.7068 7.5915,12.7068 Z"
+                                            id="Stroke-1"></path>
+                                        <path
+                                            d="M7.5915,9.5198 C5.1695,9.5198 3.2055,7.5568 3.2055,5.1348 C3.2055,2.7128 5.1695,0.7498 7.5915,0.7498 C10.0125,0.7498 11.976531,2.7128 11.976531,5.1348 C11.9855,7.5478 10.0355,9.5108 7.6225,9.5198 L7.5915,9.5198 Z"
+                                            id="Stroke-3"></path>
+                                        <path
+                                            d="M14.4831,8.3816 C16.0841,8.1566 17.3171,6.7826 17.3201,5.1196 C17.3201,3.4806 16.1251,2.1206 14.5581,1.8636"
+                                            id="Stroke-5"></path>
+                                        <path
+                                            d="M16.5954,12.2322 C18.1464,12.4632 19.2294,13.0072 19.2294,14.1272 C19.2294,14.8982 18.7194,15.3982 17.8954,15.7112"
+                                            id="Stroke-7"></path>
+                                    </g>
+                                </g>
+                            </svg>Персональные данные</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <svg width="24px" height="24px" class="icon me-2 ms-3" viewBox="0 0 24 24" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <title>Iconly/Light/Info Square</title>
+                                <g id="Iconly/Light/Info-Square" stroke="none" stroke-width="1" fill="none"
+                                    fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                    <g id="Info-Square" transform="translate(2.000000, 2.000000)" stroke="#000000">
+                                        <path
+                                            d="M14.3341,0.7501 L5.6651,0.7501 C2.6441,0.7501 0.7501,2.8891 0.7501,5.9161 L0.7501,14.0841 C0.7501,17.1111 2.6351,19.2501 5.6651,19.2501 L14.3331,19.2501 C17.3641,19.2501 19.2501,17.1111 19.2501,14.0841 L19.2501,5.9161 C19.2501,2.8891 17.3641,0.7501 14.3341,0.7501 Z"
+                                            id="Stroke-1" stroke-width="1.5"></path>
+                                        <line x1="9.9947" y1="14.0001" x2="9.9947" y2="10.0001" id="Stroke-3"
+                                            stroke-width="1.5"></line>
+                                        <line x1="9.9899" y1="6.2043" x2="9.9999" y2="6.2043" id="Stroke-2"
+                                            stroke-width="2"></line>
+                                    </g>
+                                </g>
+                            </svg>FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <svg width="24px" height="24px" class="icon me-2 ms-3" viewBox="0 0 24 24" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <title>Iconly/Light/Chat</title>
+                                <g id="Iconly/Light/Chat" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <g id="Chat" transform="translate(2.000000, 2.000000)" stroke="#000000">
+                                        <path
+                                            d="M17.0713569,17.0698633 C14.0152073,20.1263497 9.48977439,20.7866955 5.78641655,19.0740178 C5.23970647,18.8539025 4.7914846,18.6760012 4.36537232,18.6760012 C3.17848885,18.6830368 1.70116564,19.8338678 0.933359565,19.0669822 C0.165553489,18.2990915 1.3172626,16.8206004 1.3172626,15.6265504 C1.3172626,15.2003912 1.1464157,14.7601607 0.926324692,14.2123853 C-0.787169233,10.5096244 -0.125891225,5.98268764 2.93025835,2.92720636 C6.8315976,-0.975567922 13.1700176,-0.975567922 17.0713569,2.92620127 C20.979731,6.83500611 20.9726961,13.1680941 17.0713569,17.0698633 Z"
+                                            id="Stroke-4" stroke-width="1.5"></path>
+                                        <line x1="13.9394" y1="10.413" x2="13.9484" y2="10.413" id="Stroke-11"
+                                            stroke-width="2"></line>
+                                        <line x1="9.9304" y1="10.413" x2="9.9394" y2="10.413" id="Stroke-13"
+                                            stroke-width="2"></line>
+                                        <line x1="5.9214" y1="10.413" x2="5.9304" y2="10.413" id="Stroke-15"
+                                            stroke-width="2"></line>
+                                    </g>
+                                </g>
+                            </svg>Техподдержка</a>
+                    </li>
+                    <li class="nav-item">
+
+                        <a href="#" class="nav-link">
+                            <svg width="24px" height="24px" class="icon me-2 ms-3" viewBox="0 0 24 24" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <title>Iconly/Light/Logout</title>
+                                <g id="Iconly/Light/Logout" stroke="none" stroke-width="1" fill="none"
+                                    fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                    <g id="Logout" transform="translate(2.000000, 2.000000)" stroke="#000000"
+                                        stroke-width="1.5">
+                                        <path
+                                            d="M13.016,5.3895 L13.016,4.4565 C13.016,2.4215 11.366,0.7715 9.331,0.7715 L4.456,0.7715 C2.422,0.7715 0.772,2.4215 0.772,4.4565 L0.772,15.5865 C0.772,17.6215 2.422,19.2715 4.456,19.2715 L9.341,19.2715 C11.37,19.2715 13.016,17.6265 13.016,15.5975 L13.016,14.6545"
+                                            id="Stroke-1"></path>
+                                        <line x1="19.8095" y1="10.0214" x2="7.7685" y2="10.0214" id="Stroke-3"></line>
+                                        <polyline id="Stroke-5" points="16.8812 7.1063 19.8092 10.0213 16.8812 12.9373">
+                                        </polyline>
+                                    </g>
+                                </g>
+                            </svg>Выход</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <main class="col">
+            <div class="container">
+
+                <div class="d-flex justify-content-between mt-3 ms-4 flex-md-row flex-column">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Мои магазины</li>
+                        </ol>
+                    </nav>
+                    <div class="d-flex gap-2 ">
+                        <button
+                            class="btn notification  border-dark d-flex justify-content-center align-items-center p-0">
+                            <svg width="3vw" height="4vh" viewBox="0 0 24 24" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <title>Iconly/Light/Notification</title>
+                                <g id="Iconly/Light/Notification" stroke="none" stroke-width="1" fill="none"
+                                    fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                    <g id="Notification" transform="translate(3.500000, 2.000000)" stroke="#000000"
+                                        stroke-width="1.5">
+                                        <path
+                                            d="M8.5,15.8476424 C14.13923,15.8476424 16.7480515,15.1242108 17,12.220506 C17,9.31879687 15.1811526,9.50539234 15.1811526,5.94511102 C15.1811526,3.16414015 12.5452291,-1.86517468e-14 8.5,-1.86517468e-14 C4.4547709,-1.86517468e-14 1.81884743,3.16414015 1.81884743,5.94511102 C1.81884743,9.50539234 0,9.31879687 0,12.220506 C0.252952291,15.135187 2.86177374,15.8476424 8.5,15.8476424 Z"
+                                            id="Stroke-1"></path>
+                                        <path
+                                            d="M10.8887931,18.8572176 C9.52465753,20.3719337 7.3966462,20.3898948 6.0194615,18.8572176"
+                                            id="Stroke-3"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </button>
+                        <div class="bg-white shadow-sm rounded user d-flex align-items-center p-2">
+                            <img src="icon/27470334_7309681.jpeg" alt="avatar" class="rounded-circle avatar"> <span
+                                class="m-3">Максим Добжанский</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-success m-4" data-bs-toggle="modal" data-bs-target="#myModal"><span
+                        class='fw-semibold'>+</span> Создать свой магазин</button>
+                <div class="modal modal-lg" id="myModal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content rounded-1 border-0 shadow">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header border-0">
+                                <h4 class="modal-title">Создать магазин</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body border-0 d-flex flex-column gap-4">
+                                <div class="d-flex justify-content-between w-100">
+                                    <div class="d-flex flex-column col-5">
+
+                                        <label class="fw-bold ms-1" for="#template">Шаблон</label>
+                                        <select class="form-select" id="template" aria-label="Default select example">
+                                            <option selected>Стандартный</option>
+                                            <option value="1">Фирменный</option>
+                                            <option value="2">Пользовательский</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="d-flex flex-column col-5">
+
+                                        <label class="fw-bold ms-1" for="#color-scheme">Цветовая схема</label>
+                                        <select class="form-select" id="color-scheme"
+                                            aria-label="Default select example">
+                                            <option selected>Классическая</option>
+                                            <option value="1">Фирменная</option>
+                                            <option value="2">Пользовательская</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <div>
+
+                                    <label class="fw-bold ms-1" for="#domenName">Домен</label>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" id="domenName"
+                                            placeholder="Например: ivangrozniy" aria-label="Например: ivangrozniy"
+                                            aria-describedby="basic-addon2">
+                                        <button class="btn btn-secondary">
+                                            .work5
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+
+                                    <svg class="col-2" width="100px" height="100px" viewBox="0 0 24 24" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <title>Iconly/Light/Danger Circle</title>
+                                        <g id="Iconly/Light/Danger-Circle" stroke="none" stroke-width="1px" fill="none"
+                                            fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                            <g id="Danger-Circle" transform="translate(1.000000, 1.000000)"
+                                                stroke="#6666CC">
+                                                <path
+                                                    d="M10.0001,0.7501 C15.1081,0.7501 19.2501,4.8911 19.2501,10.0001 C19.2501,15.1081 15.1081,19.2501 10.0001,19.2501 C4.8911,19.2501 0.7501,15.1081 0.7501,10.0001 C0.7501,4.8911 4.8911,0.7501 10.0001,0.7501 Z"
+                                                    id="Stroke-1" stroke-width="0.5"></path>
+                                                <line x1="9.9952" y1="4.2042" x2="9.9952" y2="12.6232" id="Stroke-3"
+                                                    stroke-width="1"></line>
+                                                <line x1="9.995" y1="14.7961" x2="10.005" y2="14.7961" id="Stroke-5"
+                                                    stroke-width="1.5"></line>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <p> В названии домена разрешены латиница и "-", запрещается использовать
+                                        словосочетания Work 5. После создания магазина Вы сможете прикрутить свой домен
+                                        (например ivangrozniy.ru). Подробнее по <a href="#">ссылке</a></p>
+                                </div>
+                            </div>
+                            <!-- Modal footer -->
+                            <div class="modal-footer border-0 d-flex justify-content-start">
+                                <button type="button" class="btn btn-secondary rounded-1 p-2 w-25">Отмена</button>
+                                <button type="button" class="btn btn-success rounded-1 p-2 w-25">Создать</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white mt-4 p-4 shadow">
+                    <div class="d-flex ms-2">
+
+                        <h5 class="col-6">Магазины</h5>
+
+                        <h5 class="col-6">Действия</h5>
+                    </div>
+
+                    <div class="list-group d-flex flex-column">
+                        <div class="list-group-item list-group-item-action p-3 d-flex align-items-center">
+                            <div class="col-6">
+                                <h6>
+                                    ул.Малая Посадкая
+                                </h6>
+                            </div>
+                            <div class="col-6 gap-2">
+                                <button class="btn btn-sm btn-success me-3 p-2 rounded-1">
+                                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <title>Iconly/Light/Edit</title>
+                                        <g id="Iconly/Light/Edit" stroke="none" stroke-width="1" fill="none"
+                                            fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                            <g id="Edit" transform="translate(3.000000, 3.000000)" stroke="#fff"
+                                                stroke-width="1.5">
+                                                <line x1="10.7473996" y1="17.4429051" x2="18" y2="17.4429051"
+                                                    id="Stroke-1">
+                                                </line>
+                                                <path
+                                                    d="M9.7800071,0.794792587 C10.5556498,-0.132213323 11.949987,-0.268144478 12.8962256,0.491732963 C12.9485416,0.532957985 14.6294799,1.83878843 14.6294799,1.83878843 C15.6689776,2.46719147 15.9919725,3.80310504 15.3493946,4.8225887 C15.3152754,4.877184 5.81194644,16.7644749 5.81194644,16.7644749 C5.49577537,17.1588981 5.01583223,17.3917638 4.50290722,17.3973347 L0.863527997,17.4430165 L0.0435303654,13.9723153 C-0.0713375414,13.4843002 0.0435303654,12.9717729 0.359701436,12.5773497 L9.7800071,0.794792587 Z"
+                                                    id="Stroke-3"></path>
+                                                <line x1="8.02082217" y1="3.00088838" x2="13.4730672" y2="7.18801364"
+                                                    id="Stroke-5"></line>
+                                            </g>
+                                        </g>
+                                    </svg><span class="btn-text"> Редактировать</span></button>
+                                <button class="btn btn-sm btn-secondary p-2 rounded-1">
+                                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <title>Iconly/Light/Close Square</title>
+                                        <g id="Iconly/Light/Close-Square" stroke="none" stroke-width="1" fill="none"
+                                            fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                            <g id="Close-Square" transform="translate(2.000000, 2.000000)" stroke="#fff"
+                                                stroke-width="1.5">
+                                                <line x1="12.3955" y1="7.5949" x2="7.6035" y2="12.3869" id="Stroke-1">
+                                                </line>
+                                                <line x1="12.397" y1="12.3898" x2="7.601" y2="7.5928" id="Stroke-2">
+                                                </line>
+                                                <path
+                                                    d="M14.3345,0.7502 L5.6655,0.7502 C2.6445,0.7502 0.7505,2.8892 0.7505,5.9162 L0.7505,14.0842 C0.7505,17.1112 2.6355,19.2502 5.6655,19.2502 L14.3335,19.2502 C17.3645,19.2502 19.2505,17.1112 19.2505,14.0842 L19.2505,5.9162 C19.2505,2.8892 17.3645,0.7502 14.3345,0.7502 Z"
+                                                    id="Stroke-3"></path>
+
+                                            </g>
+                                        </g>
+                                    </svg><span class="btn-text"> Редактировать</span></button>
+                            </div>
+                        </div>
+                        <div class="list-group-item list-group-item-action p-3 d-flex align-items-center">
+
+                            <div class="col-6">
+                                <h6>
+                                    ул.Большая Посадкая
+                                </h6>
+                            </div>
+                            <div class="col-6 gap-2">
+                                <button class="btn btn-sm btn-success me-3 p-2 rounded-1">
+                                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <title>Iconly/Light/Edit</title>
+                                        <g id="Iconly/Light/Edit" stroke="none" stroke-width="1" fill="none"
+                                            fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                            <g id="Edit" transform="translate(3.000000, 3.000000)" stroke="#fff"
+                                                stroke-width="1.5">
+                                                <line x1="10.7473996" y1="17.4429051" x2="18" y2="17.4429051"
+                                                    id="Stroke-1">
+                                                </line>
+                                                <path
+                                                    d="M9.7800071,0.794792587 C10.5556498,-0.132213323 11.949987,-0.268144478 12.8962256,0.491732963 C12.9485416,0.532957985 14.6294799,1.83878843 14.6294799,1.83878843 C15.6689776,2.46719147 15.9919725,3.80310504 15.3493946,4.8225887 C15.3152754,4.877184 5.81194644,16.7644749 5.81194644,16.7644749 C5.49577537,17.1588981 5.01583223,17.3917638 4.50290722,17.3973347 L0.863527997,17.4430165 L0.0435303654,13.9723153 C-0.0713375414,13.4843002 0.0435303654,12.9717729 0.359701436,12.5773497 L9.7800071,0.794792587 Z"
+                                                    id="Stroke-3"></path>
+                                                <line x1="8.02082217" y1="3.00088838" x2="13.4730672" y2="7.18801364"
+                                                    id="Stroke-5"></line>
+                                            </g>
+                                        </g>
+                                    </svg><span class="btn-text"> Редактировать</span></button>
+                                <button class="btn btn-sm btn-secondary p-2 rounded-1">
+                                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <title>Iconly/Light/Close Square</title>
+                                        <g id="Iconly/Light/Close-Square" stroke="none" stroke-width="1" fill="none"
+                                            fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                            <g id="Close-Square" transform="translate(2.000000, 2.000000)" stroke="#fff"
+                                                stroke-width="1.5">
+                                                <line x1="12.3955" y1="7.5949" x2="7.6035" y2="12.3869" id="Stroke-1">
+                                                </line>
+                                                <line x1="12.397" y1="12.3898" x2="7.601" y2="7.5928" id="Stroke-2">
+                                                </line>
+                                                <path
+                                                    d="M14.3345,0.7502 L5.6655,0.7502 C2.6445,0.7502 0.7505,2.8892 0.7505,5.9162 L0.7505,14.0842 C0.7505,17.1112 2.6355,19.2502 5.6655,19.2502 L14.3335,19.2502 C17.3645,19.2502 19.2505,17.1112 19.2505,14.0842 L19.2505,5.9162 C19.2505,2.8892 17.3645,0.7502 14.3345,0.7502 Z"
+                                                    id="Stroke-3"></path>
+
+                                            </g>
+                                        </g>
+                                    </svg><span class="btn-text"> Редактировать</span></button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
